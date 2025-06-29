@@ -93,24 +93,25 @@ A pixel-perfect, fully responsive website for an imaginary therapist — **Dr. S
 `bash
 git clone https://github.com/Harshit6201/Dr.-Sarena-Balke_PayS.git
 cd serena-blake
+
 2. Install dependencies
 npm install
 
 3. Run the dev server
 npm run dev
 
-✅ Deployment
+## ✅ Deployment
 This project is deployed on Vercel:
 🔗 https://dr-serena-blake-psy-d-47l8.vercel.app
 
-🙏 Acknowledgements
+## 🙏 Acknowledgements
 UI inspiration from drjenniferhahm.com
 
 Icons/images from Freepik and Lucide
 
 Thanks to React Hook Form for seamless form validation
 
-📧 Contact
+## 📧 Contact
 Built by [Harshit Tiwari] — for internship assignment purposes.
 Feel free to connect: [harshtiwari8210@gmail.com]
 
