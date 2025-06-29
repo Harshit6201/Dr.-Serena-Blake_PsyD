@@ -2,93 +2,68 @@
 
 import { useState } from 'react';
 import { ChevronDown, Phone, Mail, MapPin, Clock, CheckCircle, Menu, X, Star, Heart, Shield } from 'lucide-react';
+type FormData = {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+  preferredTime: string;
+  agreeContact: boolean;
+};
 
+type FormErrors = Partial<Record<keyof FormData, string>>;
 export default function Home() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
     email: '',
     message: '',
     preferredTime: '',
-    agreeContact: false
+    agreeContact: false,
   });
-  
-  const [formErrors, setFormErrors] = useState({});
+
+  const [formErrors, setFormErrors] = useState<FormErrors>({});
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [openFAQ, setOpenFAQ] = useState(null);
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const validateForm = () => {
-    const errors = {};
-    
+    const errors: FormErrors = {};
+
     if (!formData.name.trim()) {
       errors.name = 'Name is required';
     }
-    
+
     if (!formData.phone.trim()) {
       errors.phone = 'Phone number is required';
     } else if (!/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/[\s\-\(\)]/g, ''))) {
       errors.phone = 'Please enter a valid phone number';
     }
-    
+
     if (!formData.email.trim()) {
       errors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       errors.email = 'Please enter a valid email address';
     }
-    
+
     if (!formData.message.trim()) {
       errors.message = 'Please tell us what brings you here';
     } else if (formData.message.trim().length < 10) {
       errors.message = 'Please provide more details (at least 10 characters)';
     }
-    
+
     if (!formData.preferredTime.trim()) {
       errors.preferredTime = 'Preferred contact time is required';
     }
-    
+
     if (!formData.agreeContact) {
       errors.agreeContact = 'You must agree to be contacted to proceed';
     }
-    
+
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    if (!validateForm()) {
-      return;
-    }
-
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    try {
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setFormSubmitted(true);
-      
-      // Reset form after success
-      setTimeout(() => {
-        setFormData({
-          name: '',
-          phone: '',
-          email: '',
-          message: '',
-          preferredTime: '',
-          agreeContact: false
-        });
-        setFormSubmitted(false);
-        setFormErrors({});
-      }, 5000);
-    } catch (error) {
-      console.error('Form submission error:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  }};
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
