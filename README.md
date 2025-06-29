@@ -54,3 +54,64 @@ A pixel-perfect, fully responsive website for an imaginary therapist — **Dr. S
 
 ## 📁 Folder Structure
 
+# Project root
+├── app/ # Next.js App Router pages and layout
+│ ├── globals.css
+│ ├── layout.tsx
+│ └── page.tsx
+│
+├── components/ # Component library
+│ └── ui/ # Reusable UI components (Button, Card, etc.)
+│
+├── hooks/ # Custom React hooks
+│ └── use-toast.ts
+│
+├── lib/ # Utility functions and shared logic
+│ └── utils.ts
+│
+├── node_modules/ # Project dependencies
+│
+├── .eslintrc.json # Linting config
+├── .gitignore # Git ignore file
+├── components.json # (Optional or unused)
+├── next-env.d.ts # Next.js TypeScript types
+├── next.config.js # Next.js config
+├── package-lock.json
+├── package.json # Project metadata and scripts
+├── postcss.config.js # PostCSS config for Tailwind
+├── tailwind.config.ts # Tailwind CSS config
+└── tsconfig.json # TypeScript config
+
+
+
+
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/Harshit6201/Dr.-Sarena-Balke_PayS.git
+cd serena-blake
+2. Install dependencies
+npm install
+
+3. Run the dev server
+npm run dev
+
+✅ Deployment
+This project is deployed on Vercel:
+🔗 https://dr-serena-blake-psy-d-47l8.vercel.app
+
+🙏 Acknowledgements
+UI inspiration from drjenniferhahm.com
+
+Icons/images from Freepik and Lucide
+
+Thanks to React Hook Form for seamless form validation
+
+📧 Contact
+Built by [Harshit Tiwari] — for internship assignment purposes.
+Feel free to connect: [harshtiwari8210@gmail.com]
+
+
