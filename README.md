@@ -1,39 +1,56 @@
-# Dr. Serena Blake, PsyD – Therapist Website
+# 🧠 Dr. Serena Blake, PsyD – Therapist Website
 
-A modern, responsive portfolio website for a licensed clinical psychologist built using **Next.js 14**, **Tailwind CSS**, and **TypeScript**.
+A pixel-perfect, fully responsive website for an imaginary therapist — **Dr. Serena Blake, PsyD** — built using **Next.js 14 (App Router)** and **Tailwind CSS**
 
-## 🔗 Live Demo
-
-👉 [https://dr-serena-blake-psy-d-47l8.vercel.app](https://dr-serena-blake-psy-d-47l8.vercel.app)
+🔗 **Live Site**: [https://dr-serena-blake-psy-d-47l8.vercel.app](https://dr-serena-blake-psy-d-47l8.vercel.app)
 
 
 
-## 🧠 Overview
+## 🛠 Tech Stack
 
-This project was created as part of a web development internship assignment to replicate the layout, design, and functionality of [drjenniferhahm.com](https://www.drjenniferhahm.com/).
-
-It includes:
-
-- Hero section with clear CTA
-- About section with bio, contact, and office hours
-- Services offered with icons and images
-- Client testimonials with star ratings
-- FAQ accordion section
-- Contact form with full validation and confirmation message
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/)
+- **Image Optimization**: `next/image`
+- **Hosting**: [Vercel](https://vercel.com/)
 
 
 
-## ⚙️ Tech Stack
+## 📄 Features
 
-| Technology | Use Case |
-|------------|----------|
-| [Next.js 14](https://nextjs.org/) | React framework with App Router |
-| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS styling |
-| [TypeScript](https://www.typescriptlang.org/) | Type-safe code |
-| [Lucide React](https://lucide.dev/) | Clean SVG icons |
-| [Vercel](https://vercel.com/) | Hosting and deployment |
+- ✅ Pixel-perfect UI based on reference site
+- ✅ Fully responsive layout (Mobile → Desktop)
+- ✅ Component-based architecture with clean file structure
+- ✅ Smooth scroll navigation and animations
+- ✅ Real-time contact form validation with success state
+- ✅ Accessible accordion for FAQs
+- ✅ Optimized for performance and Vercel deployment
 
----
+
+
+## 🔍 Page Sections
+
+### 1. Hero Section
+- Full-screen intro with gradient background
+- Headline, subheadline, and animated CTA
+
+### 2. About Section
+- Therapist bio with headshot and contact info
+- Responsive grid layout
+
+### 3. Services Section
+- Three service cards with images, descriptions, and pricing
+- Interactive hover effects and equal height layout
+
+### 4. FAQ Section
+- Accordion-style toggle
+- Accessible, animated transitions
+
+### 5. Contact Form
+- Name, phone, email, message, preferred time
+- Real-time validation and thank-you message
+- Consent checkbox
+
 
 ## 📁 Folder Structure
 
