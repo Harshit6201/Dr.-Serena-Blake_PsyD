@@ -64,20 +64,28 @@ export default function Home() {
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
   };
+const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  if (validateForm()) {
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setFormSubmitted(true);
+    }, 2000); // Simulate async submission
+  }
+};
+  const handleInputChange = (field: keyof FormData, value: string | boolean) => {
+  setFormData(prev => ({ ...prev, [field]: value }));
+  if (formErrors[field]) {
+    setFormErrors(prev => ({ ...prev, [field]: '' }));
+  }
+};
 
-  const handleInputChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-    
-    // Clear error when user starts typing
-    if (formErrors[field]) {
-      setFormErrors(prev => ({ ...prev, [field]: '' }));
-    }
-  };
+const scrollToSection = (sectionId: string) => {
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+  setMobileMenuOpen(false);
+};
 
-  const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-    setMobileMenuOpen(false);
-  };
 
   const services = [
     {
