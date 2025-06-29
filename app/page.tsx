@@ -63,7 +63,7 @@ export default function Home() {
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
-  }};
+  };
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
