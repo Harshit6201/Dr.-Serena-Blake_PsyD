@@ -88,9 +88,9 @@ A pixel-perfect, fully responsive website for an imaginary therapist — **Dr. S
 
 ## 🚀 Getting Started
 
-### 1. Clone the repo
+1. Clone the repo
 
-```bash
+`bash
 git clone https://github.com/Harshit6201/Dr.-Sarena-Balke_PayS.git
 cd serena-blake
 2. Install dependencies
