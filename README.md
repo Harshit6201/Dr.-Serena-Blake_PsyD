@@ -1,4 +1,4 @@
-# Dr. Serena Blake, PsyD – Therapist Portfolio Website
+# Dr. Serena Blake, PsyD – Therapist Website
 
 A modern, responsive portfolio website for a licensed clinical psychologist built using **Next.js 14**, **Tailwind CSS**, and **TypeScript**.
 
