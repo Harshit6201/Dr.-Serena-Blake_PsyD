@@ -5,6 +5,17 @@ A pixel-perfect, fully responsive website for an imaginary therapist — **Dr. S
 🔗 **Live Site**: [https://dr-serena-blake-psy-d-47l8.vercel.app](https://dr-serena-blake-psy-d-47l8.vercel.app)
 
 
+![Hero](https://github.com/user-attachments/assets/4cd57e76-88e0-497f-beb5-385fba4e1f6c)
+![About](https://github.com/user-attachments/assets/9250ca70-e506-42ac-a427-8ccb64fc2660)
+![Services](https://github.com/user-attachments/assets/082a02e7-816f-46be-a1d5-79c533b85725)
+![Testimonials](https://github.com/user-attachments/assets/0b82c4bd-9a09-4580-ae05-36d14eb6eacb)
+![FAQ](https://github.com/user-attachments/assets/d197d715-6a49-4b04-abd8-dcd21bd3f063)
+![Contact](https://github.com/user-attachments/assets/70352d22-f9c5-4e9d-8335-d4b373076c69)
+
+
+
+
+
  **Live Loom Video**: https://www.loom.com/share/f789d67f107c4127860cc7d4c61d929a?sid=1cf476c9-a377-4eb7-83a0-eb742153f0c9
 
 
